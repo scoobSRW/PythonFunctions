@@ -1,22 +1,17 @@
-# Function to add two numbers
 def add(x, y):
     return x + y
 
-# Function to subtract two numbers
 def subtract(x, y):
     return x - y
 
-# Function to multiply two numbers
 def multiply(x, y):
     return x * y
 
-# Function to divide two numbers with error handling
 def divide(x, y):
     if y == 0:
         return "Error: Cannot divide by zero."
     return x / y
 
-# Main calculator function
 def calculator():
     print("Select operation:")
     print("1. Add")
@@ -47,5 +42,4 @@ def calculator():
         if next_calculation.lower() != 'yes':
             break
 
-# Start the calculator
 calculator()
