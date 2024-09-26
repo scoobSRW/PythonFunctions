@@ -1,11 +1,8 @@
-# Initialize an empty shopping list
 shopping_list = []
 
-# Function to add an item to the shopping list
 def add_item(item):
     shopping_list.append(item)
 
-# Function to remove an item from the shopping list
 def remove_item(item):
     try:
         shopping_list.remove(item)
@@ -13,7 +10,6 @@ def remove_item(item):
     except ValueError:
         print(f"Item '{item}' not found in the shopping list.")
 
-# Function to print the entire shopping list
 def print_list():
     if shopping_list:
         print("Shopping List:")
@@ -22,7 +18,6 @@ def print_list():
     else:
         print("Shopping list is empty.")
 
-# Main function to interact with the user
 def shopping_list_maker():
     while True:
         action = input("Would you like to add, remove, print, or quit? ").lower()
@@ -42,5 +37,4 @@ def shopping_list_maker():
         else:
             print("Invalid action. Please try again.")
 
-# Start the shopping list maker
 shopping_list_maker()
